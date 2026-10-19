@@ -51,7 +51,6 @@ function normalizeCompletedIfPresent(payload, normalized) {
 
 function validateCreateTask(payload) {
   validatePayloadShape(payload);
-  ensureNoUnknownFields(payload);
 
   const normalized = {};
   normalizeTitleIfPresent(payload, normalized);
